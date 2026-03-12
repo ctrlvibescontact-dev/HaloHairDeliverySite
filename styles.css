@@ -122,7 +122,7 @@ color:#D89CA4;
 
 .hero {
     height: 85vh;
-    background-image: url("hair-delivery.png");
+    background-image: url("../hair-delivery.png");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -335,5 +335,6 @@ padding:40px;
 background:#3A2A28;
 color:white;
 }
+
 
 
