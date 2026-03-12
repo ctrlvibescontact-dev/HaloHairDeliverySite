@@ -1,0 +1,337 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+font-family: 'Poppins', sans-serif;
+margin:0;
+background:#FFF6F7;
+color:#3A2A28;
+}
+
+/* NAVBAR */
+
+
+/* The main bar */
+.navbar {
+    display: flex;
+    align-items: center;    /* Keeps text and logo perfectly leveled */
+    padding: 10px 20px;
+    background-color: #FFF6F7; /* Or your brand's #F5F5F5 */
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+    flex-shrink: 0; /* Prevents the navbar from shrinking on smaller screens */
+}
+
+/* Your text class */
+.brand-name {
+    font-family: 'Allura', cursive; /* To match your brand sheet */
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;  /* Prevents it from acting like a wall */
+    white-space: nowrap;    /* Keeps "Halo Hair Delivery" on one line */
+    flex-shrink: 0;     /* Stops the text from wrapping or shrinking too */
+    margin-right: 12px; /* Adds a bit of space between the text and the bag */
+}
+
+/* The logo image */
+.navbar img {
+    height: 100px;           /* Adjust this to your liking */
+    width: auto;
+    margin-left: 10px;      /* This creates the space between text and logo */
+    flex-shrink: 0;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#3A2A28;
+font-weight:500;
+transition:0.3s;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a:hover{
+color:#D89CA4;
+}
+
+.logo-container {
+    height: 250%; /* Force the container to match the navbar height */
+    width: 150px;  /* Example width; make this large enough for your desired logo size */
+    display: flex;
+    justify-content:start;
+    align-items: center;
+
+}
+
+.navbar-logo {
+    /* THIS IS THE CRITICAL PART */
+    object-fit: contain; /* Scale image down OR UP to fit within width/height */
+    width: 100%;        /* Image width matches container width */
+    height: 100%;       /* Image height matches container height */
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #FF4FA3;
+}
+
+.brand-name img {
+    height: 200px;
+    width: auto;
+}
+
+.brand-name {
+    font-family: 'Allura', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #C07C87;   /* brand pink */
+    letter-spacing: 1px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+}
+
+/* HERO */
+
+.hero {
+    height: 85vh;
+    background-image: url("../assets/hair-delivery.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #f1f1f1;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 650px;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+.hero h1{
+font-size:56px;
+color: #D89CA4;
+margin-bottom:20px;
+font-family: Playfair Display, serif;
+}
+
+.hero p{
+font-size:18px;
+color:#ffffff;
+margin-bottom:30px;
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn-primary{
+background:#D89CA4;
+color:white;
+padding:14px 28px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn-primary:hover{
+background:#C07C87;
+}
+
+.btn-secondary{
+border:2px solid #E0B84F;
+color:#E0B84F;
+padding:14px 28px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+/* HOW IT WORKS */
+
+.how-it-works {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
+
+.delivery-form-section {
+    padding: 80px 40px;
+    background: #FFF0F6;
+    text-align: center;
+}
+
+.delivery-form-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.delivery-form-section p {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.delivery-form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.primary-btn {
+    background: #FF4FA3;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.step {
+    max-width: 250px;
+}
+
+.step h3 {
+    color: #FF4FA3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.step p {
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+}
+
+.steps{
+display:flex;
+justify-content:center;
+gap:60px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+.step{
+max-width:250px;
+}
+
+/* SERVICES */
+
+.services{
+padding:100px 40px;
+text-align:center;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* CTA */
+
+.cta{
+text-align:center;
+padding:90px;
+background:#D89CA4;
+color:white;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:40px;
+background:#3A2A28;
+color:white;
+}
